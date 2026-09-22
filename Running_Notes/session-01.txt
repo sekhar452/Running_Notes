@@ -1,0 +1,159 @@
+Who are stakeholders?
+=====================
+family -> everyone part of the system are stakeholders
+everyone of us should be happy
+
+parents, us, our kids, relatives. 
+society, friends, colleagues, etc
+
+bank -> customers, employees, management and leadership, investors, RBI, IT department, marketing, sales, operation, security team, admin teams, partners, etc.
+
+100 -> 1cr -> process setup
+
+school -> students, teaching staff, non teaching staff, leadership, investors, education department, etc.
+
+devops -> team members, management, developers, testing team, operations team, admin team
+
+SDLC -> Software development lifecycle
+
+client perspective 
+end user perspective
+
+house construction -> house requirements, no of bed rooms, etc..
+
+Process
+=========
+Requirements gathering
+planning and analysis -> analysing the requirements given by client
+Design -> House Plan
+Development -> Construction
+Testing -> According to plan
+Deployment -> Start living in the house
+Maintainance -> Modifications
+
+Implementations
+================
+Waterfall -> you can't back..
+
+School Management System
+==========================
+100 years back -> gurukuls
+
+year end final exam
+Jun-1st 
+
+DAY-1 -> students are not serious from DAY-1, teachers are also not serious from DAY-1
+		 parents are serious from DAY-1
+
+out of 100 max 20-30 are pass. 70% are failure
+
+only one exam -> only one chance
+
+Unit test-I, II, III, IV, Quarterly, Half yearly, Grand test, final test -> parents
+
+Unit test-I -> 30 marks (failed)
+Unit test-II -> 31 marks 
+Final test -> 36 marks
+
+unit tests -> out of 100, 90 members
+
+students -> developers, IT team
+parents -> clients
+teachers -> testing team
+
+Gurukul -> Waterfall
+Unit tests -> Agile
+
+Why we need multiple environments?
+==================================
+DEV, SIT, UAT, PRE-PROD, PERF, SEC, PROD
+
+we taste it
+family members
+friends and relatives
+small crowd
+outsource employees
+
+FASAI
+
+market release -> 10% market share, 90% coco cola
+
+1. faster releases
+2. less defects
+
+whatsapp vs arattai
+
+1. understand their process
+2. work with that process
+3. find the improvments
+4. do a simple POC -> prove it
+5. implement in DEV, SIT, UAT
+6. take it PROD
+
+restaurant application -> waterfall
+===================================
+1 year
+developers, testing team, deployment(build and release), management team
+
+3-4 months -> only discussions
+start developing -> 3 months
+start testing -> 2 months
+
+100 defects -> send to developers
+20 invalid defects
+
+final product delivery
+
+Agile process
+
+Sprints
+=======
+Signup and Signin -> 1 month
+
+development -> 2 weeks
+testing and deployment -> 2 weeks
+
+100 defects
+15 invalid defects
+
+Products catalogue -> 2nd month... previous month defect clear, new development module
+Cart -> 3rd month
+Order management
+Payment
+Tracking Module
+Delivery
+
+final product -> honda city
+
+Slip/Daily tests
+=================
+we can conducts tests -> easy now
+200 tests
+
+product -> just test once -> no defects
+product -> 10 times test -> 1 defect
+product -> 1000 times test -> 2 defects
+
+Agile with DevOps
+=================
+1 month sign up and sign in
+
+1st DAY -> 
+
+enter your first name ___________
+enter your last name ____________
+
+test the application on daily basis..
+
+positive test cases -> positive inputs -> success
+negative test cases -> negative inputs -> failure
+
+2nd DAY
+
+10 defects 
+1 invalid defect
+
+highly available, auto scale, security
+cost optimisation
+
+build and release -> devops process and devops team
