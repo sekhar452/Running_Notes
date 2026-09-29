@@ -1,0 +1,141 @@
+3 Tier architecture
+===================
+
+road side cart. 
+cooking - raw materials - eatable format
+
+1. Take the order
+2. cook it
+3. server the order
+4. get the payment.
+
+getting orders 10 per day . suddenly raises to 30 members. i will keep the hotel.
+
+Hotel, staff hiring
+
+cook -> raw materials -> eatable format
+
+owner -> he is giving tokens
+
+cook -> 
+
+1. Take the tokens
+2. keep them in queue
+3. serve the order.
+
+80 members. again it got popular people suddenly raised again then they will go to another level called 
+restaurant.
+
+Restaurant
+=========
+Caption -> who welcomes us into restaurant, show us the table
+Waiter -> Takes the order
+Chef -> see the order, cooks the order
+waiter-> takes the order from chef, garnish with onion, Lemon, Salad, etc..
+Customer
+
+you can server 100's of people 
+
+
+
+
+==> 1 tire architecture. 
+
+Single Linux -> front end + backend and Database.
+
+
+Raw Materials : Data
+Chef - Backend Applications 
+Curd - create update read delete
+waiter: frontend applications (HTML, CSS, JS, React Js, NodeJS)
+Caption - Load Balancer.
+
+2 tier
+
+2 Linux Server.
+
+3 Tire
+
+3 Linux Servers
+
+Load Balancer -> Frontend -> 	Backend 						-> Database
+
+	Web/Frontend/HTTP		  App/Backend/Middleware Tier		-> Database tier
+
+Data Base: MySQL, Oracle, Post grace, etc...
+
+Stateless: No data will be there
+
+Stateful: Data will be there.
+
+3 Tire architecture:
+=================
+
+for above we need 3 servers. 
+
+ec2 > instances> launch Instances. 
+
+Database
+=========
+MSSQL
+MySQL
+Postgress
+Oracle
+Kafka
+MongoDB
+
+install database, upgrade, backup,restore, create schemas, monitor, scale them, clustering the databases, etc...
+
+Backend
+========
+Java, nodeJS, Python, Php, .NET
+
+Frontend
+========
+HTML, CSS, JS, Mobile app
+
+Redhat-9-DevOps-Practice
+ami-0220d79f3f480ecf5
+
+ec2-user
+DevOps321
+
+1. structured
+2. semi structured
+3. un structured
+
+
+127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326 -> semi structured
+
+key -> value
+client ip: 127.0.0.1
+client name: frank
+timestamp: 10/Oct/2000:13:55:36 -0700
+method: GET
+resource: apache_pb.gif
+status: 200
+
+DBMS and RDBMS
+==============
+RDBMS -> Relation Between tables
+
+joindevops -> 1 or many -> 1 or many courses -> 1 or many batches -> 1 or many students
+
+1 or many trainers
+===================
+
+trainer_id 		name	email			mobilenumber		aadhar
+	1			Siva	info@gmail.com	62819378994			1234666
+	
+course
+======
+
+course_id		course_name				course_description		course_code		trainer_id
+1				aiops with devsecops   	linux, admin, devops,	daws-92s		  1
+
+
+username: root
+pasword: ExpenseApp@1
+
+
+

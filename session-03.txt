@@ -1,0 +1,176 @@
+Last class we have created the Security group
+
+Inbound Rules - generate the ssh key and port 22 with my ip
+
+outbound Rules: 
+
+Absolute path: from the beginning, perfect work avuthundi
+
+Eg: Kurnool to Bangalore.
+
+relative path: from the current location. 
+
+Eg: edi kodiga chusi work cheyali.
+
+
+Launching the instances:
+
+Key pair, 
+security group
+
+launch cheyali.
+
+
+what is the command to create the keys ?
+
+ssh-keygen -f <file-name>
+
+ssh -i(just path me private key ekada unid ani) private-key(siva-92) ec2-user@107.23.134.116 >> absolute path.
+
+
+Everything in Linux is command:
+
+<command-name> <options> <inputs>
+
+1. pwd -> print work directory or present working directory
+
+2. whoami --> user
+
+3. id --> it will display the information.
+
+4. clear -> which is used to tell the clear that screen
+
+5. uname --> system information.
+
+6. crud - > create read update delete
+
+creating files/folder
+reading files/folders
+updating files/folders
+deleting files/folders
+
+7. touch <file-name> -> create the file
+
+ls -> files and folders
+ls -l -> list subdirectories in lengthy format
+ls -la all files including hidden in 
+
+
+> < ante re directing ani ardam.
+
+> single greter than symbol is for over riding
+
+>> double greter than symbol is for appending 
+
+Oka file ni oka folder loki copy cheyali
+
+Linux is case sensitive
+DevOps and devops both are different because of hashkey values.
+
+windows lo ctrl+c and ctrl + p
+
+cp (copy) < source > (file)  < destination> (file)
+
+cp aws/ sre/
+
+-r (recursive) so edi ela work avuthindi ante 
+
+cp -r (aws folder andulo una files matter) /sre (folder loki copy chy)
+
+i want to cut -> mv (move) devops.txt sre(folder)
+
+change directories: cd .. -> one step back
+
+same folder lo move chesthe edi just rename matrame chesthudi
+
+file ni download cheyali 
+
+wget(webget) (website ) it will download files from internet
+curl -> it will show the content on the screen <not saving by default> (content ni chudali ante)
+
+file read cheyali ante (cat command)
+
+search cheyali text lo :
+
+piping concept: 
+
+pipe ki oka input vastundi oka output vastundi enka oka pipe attach chesthe pipe 1 oka output pipe2 ki input avuthunid. same ala ne pipe3 ki input pipe 2 output
+
+grep < word-name> <file-name>
+cat <file-name> | grep <work-name>
+
+case insensitive -i
+
+line number kavali ante (n > line number) 
+
+line tho patu eni sarlu Linux vachindi ante (c count) finds
+
+-v (verbose) opposite (word kakunda migithavi) 
+
+head (file name) by default ( top 10 lines)
+tail (file name) by default ( bottom 10 lines)
+
+head -n 4 (file name) top 4
+
+i want middle lines 20 lines unay andulo nuchi 5-10 lines kavali.
+
+head -n 13 <file-name > | tail -n 8 
+
+files remove cheayali rm aiops.txt
+rm aws -> dir lopala delete cheyali ante -r
+
+rm -r aws
+
+file okasari remove ayindi ante you can't get it.
+
+cut and awk:
+
+cut -d(delimiter) ":" -f1(first fragment)  /etc/passwd
+
+echo just for printing purpose
+
+cut -d "/" -f1 
+
+awk command
+
+awk -f(fragment) "/"  '{print $NF}'
+
+0-999 - system users : 
+
+1000 - manually created users.
+
+files ni comprse cheyali: windows lo zip file
+
+Linux lo aythe .tar.gz format
+
+tar -c (create) z(zip) f(files) tar -czf 
+
+-c creating
+z -> .gz format
+f -> file names
+
+To extract the zip files:
+
+tar -x(extract) z(zip) f(files) tar -xzf file .tar.gz
+
+editors:
+
+vim (visullay improved editor) 
+
+esc Mode >>> Insert mode (i) >>> colon mode (esc) 
+
+:wq > write and quit
+:q > quit 
+:q! > quit with out saving
+=========================================================
+
+
+
+
+
+
+
+
+
+
+

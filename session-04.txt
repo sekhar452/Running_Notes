@@ -1,0 +1,198 @@
+vim editor
+==================
+
+colon mode
+=============
+
+:wq = wirte and quit
+:q = quit
+:q! => force quit
+:set nu
+:set nonu
+:<line-number> cursor will take us that line number
+word ni search cheyali ante /sbin
+/<word-to-search> -> forwared search
+?<backward search> -> Backword search
+:3d -> Delete 2nd line
+:5,10d -> delete 5th 10 lines.
+%(all) d -> to delete all the lines
+:noh -> don't highlight the word.
+
+Replace:
+
+:3s/<word to find>/<replacing word> -> by default first occurrence in line number 3
+:3s/sbin/SBIN/g(global) -> all occurences in line number 3
+:%s/sbin/SBIN -> entire file, all rows first occurrence.
+:%s/sbin/SBIN/g -> entire file all rows all occurrence.
+
+
+ESC Mode:
+============
+gg -> top of the file
+shift + g > bottom of the file
+undo: u (undo)
+redo (ctrl + r) 
+yy -> copy that line
+p -- paste that line
+10p - 10 times paste avuthundi
+
+=======================================================
+
+User Management:
+======================
+
+2 types of user: 
+
+$ -> normal users
+# -> Admin Acess
+
+sudo su - 
+/root -> root user home folder
+/etc/passwd = user info
+/etc/group = group info
+/etc/ssh/sshd - > ssh configuration
+/etc/sudoers = sudo users info
+/etc/sudoers.d/Ramesh = extra configuration.
+
+usermod -g devops Ramesh - set devops as primary group to ramehs
+usermod -aG testers Ramesh - appends tester as secnondary group to Ramesh
+gpasswd -d Ramesh testers
+passwd Ramesh
+
+user -> Human
+Group -> A list of humans, A group will have one or more users.
+
+Authentication and Authorization: 
+
+Authentication:- (prove u r self, system lo part) (Accenture office lo enter avachu)
+
+Authorization: (do you have access to this resource) ( user can not have any access to secure bay)
+
+Authorization:
+
+Role -> Permissions.
+
+Trainee -> Read only access
+Junior -> Write access
+Senior -> Read, write and update access
+TL -> read, write, update and delete access.
+
+A group will have role -> role has permissions.
+DevOps -> 100 members
+DevOps - > Trainees
+DevOps - > Juniors
+DevOps -> Senior
+DevOps -> Team Lead
+
+1. Create User
+2. Add him to DevOps-Trainee Group
+
+useradd <user name> when we create user Linux will create a group also on the same user name
+useradd Ramesh
+
+A user in Linux will have 1 primary group and 0 or more secondary group.
+
+info about Ramesh id <User name>
+
+Userid 0 means, it is root user.
+
+groupadd DevOps:
+
+cat /etc/passwd -> user info
+
+/etc/group -> group ifno
+
+Usermod -g (group name) (user-name) adding user to primary group.
+
+shift + Insert to copy and insert in windows to Linux
+
+usermod -ag sre ramesh
+
+===============================================
+
+passwd <user-name> 
+
+ssh ramesh@ipaddress
+
+Linux by default key based authentication.
+
+/etc/ssh/sshd_config -> passwordauthentication: no (yes) esc :wq
+
+sshd -t (test) no ouput no erroes
+
+sshd -t check syntax of ssh config
+
+systemctl restart sshd
+
+pwd based auth for Ramesh.
+
+
+Permissions:
+
+Three types of Permissions:
+ 
+Read 4 , Write 2 , Execute 1
+
+-rw-r--r--
+
+- (file)
+
+u 	g 	o
+owner, group others
+rw-        r--	r--
+
+chmod u+x execute
+chmod g+w 
+
+chmod ugo+rwx 
+
+chmod o-rwx 
+
+chmod g-wx 
+
+Only owner or root user can only change the permissions to the file.
+
+u -> rwx - 7
+g -> rx - 5
+o -> x - 1
+
+chmod 751 devops.txt
+chmod 777 devops.txt
+
+ownership
+===============
+a file ownership can only be changed by root user, not even owner 
+chown user: grp <file/folder>
+chown user: group R 
+
+
+
+to give sudo access to Ramesh 
+
+there are multiple ways to add sudo access to Ramesh
+
+admin access
+================
+usermod -aG wheel Ramesh
+
+/etc/sudoers : edi config files.
+
+/etc/sudoers.d /
+
+
+Key based authentication.
+
+Ramesh should generate private and public keys
+send public key to admin
+he will create a user
+he will go to Ramesh directory, create .ssh folder
+inside .ssh, there should be 
+
+
+
+
+
+
+
+
+

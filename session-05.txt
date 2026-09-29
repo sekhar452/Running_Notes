@@ -1,0 +1,172 @@
+if employee leaves the organisation.
+=============================
+
+remove him from all the groups -> gpasswd -d Ramesh wheel, usermod -g Ramesh Ramesh,
+lock him immediately. usermod -e 
+kill his existing sessions - pkill -u Ramesh 
+take his home folder back up
+search he has any other files in the system, backup
+then delete him 
+
+gpasswd -d Ramesh wheel
+
+id Ramesh
+
+you can not remove from primary group from his devops:
+
+id Ramesh.
+
+usermod -g Ramesh Ramesh (first stage ki tesukoni ravali)
+
+id Ramesh
+
+usermod -L Ramesh - he can login
+
+id Ramesh
+
+kill the existing session: pkill -u Ramesh 
+
+who (evaru login ayaru)
+
+Linux key based  authentication user lock his access.
+
+usermod -e 1 Ramesh
+
+who
+
+pkill -u Ramesh
+
+tar -czvf /backup/ramesh-offboarding-backup.tar.gz /home/Ramesh
+
+mkdir /backup
+cd backup
+
+find <where to search> options <what to search?
+
+/ -> root directory
+
+find / -name "*.log" 
+
+find / -name "*sswd*"  it will list all the files with sswd
+
+find / -type d -name "Ramesh"
+
+find / -u Ramesh
+
+find / -user Ramesh
+
+userdel -r Ramesh
+
+id Ramesh
+=====================================
+
+package management:
+===================
+
+os servers have url to connect internet to fetch updates.
+
+dnf install <package-names>
+
+cd /etc/yum.repos.d/ -> location lo url configure chesi untaru andulo nuchi web server ki connect avuthunid
+
+yum - > old version of RHEL
+dnf (dandified YUM) - > latest version of RHEL
+yum is softlinked 
+
+remove : dnf remove <package name>
+update: dnf update <package name>
+install : dnf -l intalled
+dnf search git - > git sambandinchi packages chupistundi.
+dnf search MySQL -> MySQL sambandinchi packages chupistundi.
+dnf info git -> information of git 
+
+dnf repolist - > amazon Linux , Kernel
+
+ubuntu value -> apt-get
+
+service management:
+
+sshd -> it is a service continuously running
+
+nginx > web/http server
+
+apache http -> old
+
+systemctl start nginx -> it will start the nginx server
+Linux - physically existing server
+nginx this is logical server/service running inside Linux server
+
+systemctl stop nginx
+systemctl restart nginx
+systemctl enable nginx-> nginx will start automatically whenever you start Linux server
+systemctl disable nginx -> nginx wont start automatically when a server is restarted system ctl status nginx
+
+Network Management:
+
+How many ports are the in system -> 0-65,535
+
+ssh - 22
+http - 80
+https - 443
+MySQL - 3306
+backend - 8080
+smtp - 25
+Jenkins - 8080
+dns - 53
+
+netstat -lntp list numbers p process id t tcp protocal
+
+process management:
+===================
+everything is process. 
+TL -> senior enginerr - Jr Engineer - Fresher 
+Task Id - Tracking purpose.
+TL - > TID -> 1
+SE - > TID -> 2
+JE - > TID -> 3
+Fresher - > TID -> 4
+
+4 children
+3 parent
+
+cat devops.txt
+
+it wll create one process for that, start the process, complete the process.
+
+ps : process started by current user
+
+ps -ef -> all running process.
+
+ps -ef : list out all process pid(process id) ppid(parent process id)
+
+there are two types of process: 
+
+foreground (front lo run avuthndi ) and back group process:
+
+sleep 10 - 
+
+sleep 10 @ background.
+
+ps -ef | grep sleep.
+
+Application stop trouble shooting 
+service should be running -> system ctl status nginx
+port should be opened -> netstat -lntp
+process also should be running. ps -ef | grep nginx
+
+go and check logs.
+
+===================================
+
+
+
+
+
+
+
+
+
+
+
+
+
